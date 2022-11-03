@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+/* 배민 한나프로체 */
+@font-face{
+    font-family: 'Baemin';
+    src: url('../font/BMHANNAPro.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 고도 마음체 */
+@font-face{
+    font-family: 'GodoM';
+    src: url('../font/GodoM.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 고양시 고양체 */
+@font-face{
+    font-family: 'Goyang';
+    src: url('../font/Goyang.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    width:100%;
+    height:100%;
+}
+
+
+body{
+    font-family: 'GodoM';
+    width:100%;
+    height:100%;
+}
+
+
+header{
+    text-align: center;
+    width:100%;
+    height:12%;
+    background-color: black;
+    color: #ffffff;
+    
+}
+
+h1{
+    font-size: 40px;
+    line-height: 70px;
+}
+
+main{
+    width:100%;
+    height: 81%;
+    text-align: center;
+    background-color: whitesmoke;
+}
+    
+footer{
+    font-family: 'Goyang';
+    width: 100%;
+    height:7%;
+    text-align: center;
+    background-color: #e3dfd7;
+    display:table;
+    font-size: large;
+}
+
+footer > span{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.m-bt1{
+    width: 50%;
+    float: left;
+}
+.m-bt2{
+    width: 50%;
+    float: right;
+}
+.p-bt1{
+    width: 60%;
+    height: 60%;
+    float:right;
+    /* border: 1px solid black; */
+    margin-top: 5%;
+}
+.p-bt2{
+    width: 60%;
+    height: 60%;
+    float: left;
+    /* border: 1px solid black; */
+    margin-top: 5%;
+}
+.image{
+    width:100%;
+    height:100%;
+    
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+    -moz-animation:blink 1.5s ease-in-out infinite alternate; 
+    animation:blink 1.5s ease-in-out infinite alternate;
+}
+.txt{
+    /* height:70px; */
+    font-size: larger;
+    text-align: center;
+}
+
+/* 그림 반짝이는 효과 */
+@-webkit-keyframes blink{ 
+    0% {opacity:0;} 100% {opacity:1;} 
+} 
+
+@-moz-keyframes blink{ 
+    0% {opacity:0;} 100% {opacity:1;} 
+} 
+@keyframes blink{ 
+    0% {opacity:0;} 100% {opacity:1;} 
+}
+
