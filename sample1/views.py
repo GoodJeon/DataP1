@@ -14,21 +14,18 @@ from django.http import JsonResponse
 
 '''데이터 읽기'''
 # 자신의 컴퓨터의 데이터가 있는 경로에 맞게 사용하세요^^
-import os 
-os.chdir("../sample1/data")
-PATH = os.getcwd()
-sp=pd.read_csv(PATH+'/서울시 우리마을가게 상권분석서비스(상권-생활인구)1.csv',encoding='cp949')
+sp=pd.read_csv('/서울시 우리마을가게 상권분석서비스(상권-생활인구)1.csv',encoding='cp949')
 # income_21=pd.read_csv(PATH+'/서울시 우리마을가게 상권분석서비스(상권-추정매출).csv',encoding='cp949')
 # income_20=pd.read_csv(PATH+'/서울시우리마을가게상권분석서비스(상권-추정매출)_2020.csv',encoding='cp949')
 # income_19=pd.read_csv(PATH+'/서울시 우리마을가게 상권분석서비스(상권-추정매출)_2019.csv',encoding='cp949')
 # income_18=pd.read_csv(PATH+'/서울시 우리마을가게 상권분석서비스(상권-추정매출)_2018.csv',encoding='cp949')
 
-where=pd.read_csv(PATH+'/서울시 우리마을가게 상권분석서비스(상권영역).csv',encoding='cp949')
-gu_code=pd.read_csv(PATH+'/행정동코드_매핑정보_2018.csv')
-moneymoney=pd.read_csv(PATH+'/moneypower.csv')
-x_du = pd.read_csv(PATH+'/x_du.csv')
-y_du = pd.read_csv(PATH+'/y_du.csv')
-rates = pd.read_csv(PATH+'/rates.csv')
+where=pd.read_csv('/서울시 우리마을가게 상권분석서비스(상권영역).csv',encoding='cp949')
+gu_code=pd.read_csv('/행정동코드_매핑정보_2018.csv')
+moneymoney=pd.read_csv('/moneypower.csv')
+x_du = pd.read_csv('/x_du.csv')
+y_du = pd.read_csv('/y_du.csv')
+rates = pd.read_csv('/rates.csv')
 
 
 '''생활 인구 데이터 전처리'''
